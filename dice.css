@@ -1,0 +1,89 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+/* body styling */
+body{
+    background-image: url(diceBack.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+/* styling of main div */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #FA647D;
+    text-align: center;
+    padding: 2em;
+    width: 30%;
+    margin: auto;
+    height: 60vh;
+    border-radius: 1em;
+    margin-top: 4em;
+    opacity: 0.9;
+}
+/* styling of all H4 tag in main div */
+.main h4{
+    font-style: italic;
+}
+/* styling of head div */
+.head{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+/* styling of H4 tag in the instruction div */
+#instruction h4{
+    color:red;
+    background-color: antiquewhite;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+/* styling of img in container div for dice */
+.container img {
+    cursor: pointer;
+    width: 10em;
+    height: 10em;
+}
+/* responsive settings and styling for normal devices upto 800px width */
+@media only screen and (max-width:800px){
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: #FA647D;
+        text-align: center;
+        padding: 2em;
+        width: 80%;
+        margin: auto;
+        height: 60vh;
+        border-radius: 1em;
+        margin-top: 4em;
+        font-size: 0.8em;
+    }
+
+}
+/* for bigger screen mobile devices within range of 820 to 1000px width*/
+@media only screen and (min-width:820px) and (max-width:1000px){
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #67EB65 ;
+        text-align: center;
+        padding: 2em;
+        width: 80%;
+        margin: auto;
+        height: 70vh;
+        border-radius: 1em;
+        margin-top: 4em;
+        font-size: 1.5em;
+    }
+
+}
